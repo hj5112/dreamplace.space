@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>经典台球 - 专业8球台球游戏 | DreamPlace.space</title>
+    <meta name="description" content="在线畅玩经典台球游戏，体验真实的8球台球玩法，挑战你的台球技巧，享受专业级的台球体验。">
+    <link rel="canonical" href="https://dreamplace.space/classic-billiards" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHKGBSELH7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MHKGBSELH7');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .game-container {
+            background-color: #1a1a1a;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 宽高比 */
+            height: 0;
+            min-height: 600px;
+            max-height: 800px;
+        }
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .game-container {
+                min-height: 400px;
+            }
+        }
+        .prose {
+            max-width: 65ch;
+            margin: 0 auto;
+        }
+        .game-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #loading-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 10;
+            display: none;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        .game-container.loading #loading-message {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <h1 class="text-3xl font-bold text-gray-900">经典台球</h1>
+            <p class="mt-2 text-lg text-gray-600">专业8球台球游戏 - 体验真实的台球竞技</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+            <div class="game-wrapper">
+                <div class="game-container loading mb-6">
+                    <div id="loading-message">
+                        <p class="text-lg font-semibold">游戏加载中...</p>
+                        <p class="text-sm mt-2">首次加载可能需要一些时间，请耐心等待</p>
+                    </div>
+                    <iframe 
+                        src="https://play.famobi.com/8-ball-billiards-classic"
+                        title="经典台球游戏"
+                        frameborder="0"
+                        scrolling="no"
+                        allow="autoplay; fullscreen"
+                        style="width: 100%; height: 100%;"
+                        onload="this.parentElement.classList.remove('loading');"
+                        onerror="this.style.display='none'; document.getElementById('loading-message').innerHTML='游戏加载失败，请刷新页面重试';">
+                    </iframe>
+                </div>
+            </div>
+
+            <section class="prose max-w-none">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">游戏介绍</h2>
+                <p class="text-gray-700 mb-4">
+                    经典台球是一款专业的8球台球游戏，完美还原了真实台球的物理效果和游戏规则。游戏采用精美的3D画面，让你体验最真实的台球竞技，挑战自己的台球技巧。无需下载，即可在线畅玩。
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">游戏特点</h2>
+                <ul class="list-disc pl-6 text-gray-700 mb-4">
+                    <li>真实的台球物理效果</li>
+                    <li>专业的8球台球规则</li>
+                    <li>精美的3D游戏画面</li>
+                    <li>多种难度级别选择</li>
+                    <li>支持单人和双人模式</li>
+                    <li>完全免费在线游玩</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">游戏规则</h2>
+                <p class="text-gray-700 mb-4">
+                    游戏采用标准的8球台球规则。玩家需要先确定自己的球组（全色球或花色球），然后依次击打自己的球，最后将8号球打入指定袋中获胜。注意不要提前将8号球打入袋中，否则将直接判负。合理规划击球顺序，注意防守策略。
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">游戏技巧</h2>
+                <p class="text-gray-700 mb-4">
+                    在游戏中，你需要掌握以下要点：
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 mb-4">
+                    <li>合理控制击球力度</li>
+                    <li>准确判断击球角度</li>
+                    <li>灵活运用台球旋转</li>
+                    <li>学会防守性打法</li>
+                    <li>提前规划击球路线</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">游戏控制</h2>
+                <p class="text-gray-700">
+                    使用鼠标控制击球方向和力度，左键点击确定方向，按住左键调整力度。在移动设备上，可以通过触摸屏幕来调整击球方向和力度，点击屏幕确定方向，长按调整力度后释放进行击球。游戏提供瞄准辅助线，帮助你更准确地进行击球。
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-600">
+                © 2024 DreamPlace.space - 提供优质在线游戏体验
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const gameContainer = document.querySelector('.game-container');
+            const iframe = gameContainer.querySelector('iframe');
+            
+            // 处理加载超时
+            setTimeout(function() {
+                if (gameContainer.classList.contains('loading')) {
+                    document.getElementById('loading-message').innerHTML = 
+                        '<p class="text-lg font-semibold">游戏加载较慢</p>' +
+                        '<p class="text-sm mt-2">请刷新页面重试，或稍后再试</p>';
+                }
+            }, 15000);
+
+            // 添加错误处理
+            window.addEventListener('message', function(e) {
+                if (e.data && e.data.error) {
+                    document.getElementById('loading-message').innerHTML = 
+                        '<p class="text-lg font-semibold">游戏加载失败</p>' +
+                        '<p class="text-sm mt-2">请刷新页面重试</p>';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
